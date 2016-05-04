@@ -42,9 +42,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable();
 
-        OAuth2ClientAuthenticationProcessingFilter clientContextFilter;
-
-        OAuth2RestOperations s;
     }
 
     @Override
