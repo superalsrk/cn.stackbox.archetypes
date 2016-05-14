@@ -55,8 +55,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-    private InMemoryUserDetailsManagerConfigurer<AuthenticationManagerBuilder>
-    inMemoryConfigurer() {
+    private InMemoryUserDetailsManagerConfigurer<AuthenticationManagerBuilder> inMemoryConfigurer() {
         return new InMemoryUserDetailsManagerConfigurer<>();
     }
 
@@ -82,10 +81,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     /**
-     * 判断参数里的Profile是否在激活的Profile里,
+     * 判断参数里的Profile是否在激活的Profile里, 推荐使用ApplicationContextRegister里的方法
      * Note: 在不设置任何Profile时, ActiveProfile会为空, 但是实际上会使用DefaultProfile
      * @return
      */
+    @Deprecated
     private Boolean isProfileActive (String testProfile) {
 
         if(environment.getActiveProfiles().length > 0) {
