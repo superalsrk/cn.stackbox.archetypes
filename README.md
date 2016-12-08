@@ -1,4 +1,4 @@
-org.stackbox.archetypes
+cn.stackbox.archetypes
 ===
 
 
@@ -14,6 +14,6 @@ mvn archetype:generate -DarchetypeGroupId=cn.stackbox.archetypes -DarchetypeArti
 
 ### Appendix
 
-Need more demos? please see [springboot-practice](https://github.com/superalsrk/springboot-practic://github.com/superalsrk/springboot-practice)
+Need more demos? please see [springboot-practice](https://github.com/superalsrk/springboot-practice)
 
 
